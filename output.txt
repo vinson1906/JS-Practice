@@ -1,0 +1,13 @@
+[ 'vinson', 'viswaa', 'raja' ]
+vinson
+after shift: [ 'viswaa', 'raja' ]
+after unshift: [ 'prashanth', 'viswaa', 'raja' ]
+after push: [ 'prashanth', 'viswaa', 'raja', 'santhosh' ]
+after pop: [ 'prashanth', 'viswaa', 'raja' ]
+[ 25, 75, 60, 20 ]
+50
+25
+40
+35
+19
+[]
