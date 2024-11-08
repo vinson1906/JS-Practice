@@ -26,3 +26,28 @@ const qualification=age.filter((age)=>{
     
 })
 console.log(qualification)
+//to illustrate objects in an array
+let obj =[{
+    name:"vinson",
+},
+{
+  name:'vinson2',  
+}
+]
+let result=obj.push({name:'vinson3'},{name:"joseph"},{name:"samuel"})
+
+let addstudent=obj.forEach((ele,i)=>{
+    if(ele.name==="john"){
+        ele.college="NaN institute of technology"
+    }
+    else if(ele.name==="joseph" || ele.name==="samuel"){
+        ele.college="KPC ENGINEERING COLLEGE"
+    }
+    
+    
+    else{
+        ele.college="SSM COLLEGE OF ENGINEERING"
+    }
+})
+
+console.log(obj)
