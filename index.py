@@ -6,5 +6,4 @@ for i in range(6):
         print("*", end="")
     print(" ")
     
-print(sys.version)    
-
+print(sys.version)

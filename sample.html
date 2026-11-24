@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Counter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .counter-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        #ans {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 10px 0 20px;
+            color: #333;
+        }
+        input[type="button"], button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+        #add { background-color: #28a745; }
+        #minus { background-color: #dc3545; }
+        #reset { background-color: #6c757d; }
+        input[type="button"]:hover, button:hover { opacity: 0.9; }
+    </style>
+</head>
+
+<body>
+    <div class="counter-box">
+        <p id="ans">0</p>
+        <input type="button" value="Add + 1" id="add">
+        <input type="button" value="Minus - 1" id="minus">
+        <button type="button" id="reset">Reset</button>
+    </div>
+
+    <script>
+
+        let count = 0;
+
+
+        const addBtn = document.getElementById("add");
+        const minusBtn = document.getElementById("minus");
+        const resetBtn = document.getElementById("reset");
+        const ans = document.getElementById("ans");
+
+        addBtn.addEventListener("click", () => {
+            count++;
+            ans.textContent = count;
+        });
+
+        minusBtn.addEventListener("click", () => {
+            count--;
+            ans.textContent = count;
+        });
+
+        resetBtn.addEventListener("click", () => {
+            count = 0;
+            ans.textContent = count;
+        });
+    </script>
+</body>
+
+</html>
