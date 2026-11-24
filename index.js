@@ -34,6 +34,7 @@ let obj = [{
     name: 'vinson2',
 }
 ]
+
 let result = obj.push({ name: 'vinson3' }, { name: "joseph" }, { name: "samuel" })
 
 let addstudent = obj.forEach((ele, i) => {
@@ -59,3 +60,5 @@ for (let i = 0; i < 6; i++) {
     }
     console.log(row)
 }
+
+
